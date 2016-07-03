@@ -7,23 +7,83 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/slick-1.6.0/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="/slick-1.6.0/slick/slick-theme.css"/>
+
+
+
+<SCRIPT type="text/javascript">
+	function gotoStore(img) {
+		var url = 'https://play.google.com/store/apps/details?id=org.wordzoo.uhr.germanclock';
+		var win = window.open(url, '_blank');
+		win.focus();
+	}
+
+
+
+</SCRIPT>
 </head>
 
 <body>
 
 <!-- the header -->
-<div id="header">
-	<img id="headerimage" src="/images/germanclock/logo3.png">
-</div>
+<img id="headerimage" src="/images/germanclock/logo3.png">
+
 
 <ul id="headernav">
   <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">Products</a></li>
-  <li><a href="#news">Quick Start</a></li>
+  <li><a href="#news">Quickstart</a></li>
   <li><a href="#contact">Support</a></li>
   <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+
 </ul>
+
+<div id="content">
+	<div id="h1">
+		German Clock!
+		<img src="/images/germanclock/BuyOnPlay2.PNG" width="20%" height="20%" onclick="gotoStore(this);">
+	</div>
+
+
+	<div class="horr_list">
+		<img class="list_image" src="/images/germanclock/logo_moto360.png" onclick="gotoStore(this);">
+		<img class="list_image" src="/images/germanclock/logoLGG.png" onclick="gotoStore(this);">
+		<img class="list_image" src="/images/germanclock/Screenshot_2016-06-02-18-21-04.png" onclick="gotoStore(this);">
+		<img class="list_image" src="/images/germanclock/Screenshot_2016-06-02-18-17-52.png" onclick="gotoStore(this);">
+		<img class="list_image" src="/images/germanclock/Screenshot_2016-06-02-18-24-20.png" onclick="gotoStore(this);">
+		<img class="list_image" src="/images/germanclock/Screenshot_2016-06-03-10-46-55.png" onclick="gotoStore(this);">
+		<img class="list_image" src="/images/germanclock/Screenshot_2016-06-21-12-29-55.png" onclick="gotoStore(this);">
+		<img class="list_image" src="/images/germanclock/Screenshot_2016-06-21-12-35-36.png" onclick="gotoStore(this);">
+	</div>
+
+	<div id="h2">
+		Learn to tell time by reading it all day!  ))
+	</div>
+
+	<div id="h3">
+		Learn the time lanugage of German interactively!  ))
+	</div>
+</div>
+
+ <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/slick-1.6.0/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.horr_list').slick({
+			dots: true,
+			infinite: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear',
+			arrows: true,
+			adaptiveHeight: true,
+			centerMode: true
+
+      });
+    });
+  </script>
 
 </body>
 </html>
