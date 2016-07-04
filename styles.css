@@ -105,3 +105,33 @@ ul#headernav li a:hover {
 
 
 
+ul#footernav {	
+	width: 85%;
+	display:table; 
+	margin:0 
+	auto;
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fff200;
+	position: fixed;
+	left: 0;
+	right: 0;
+    	bottom: 0;
+}
+
+ul#footernav li {
+    float: left;
+}
+
+ul#footernav li a {
+	display: inline-block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+ul#footernav li a:hover {
+    	background-color: #fffbb0;
+}
