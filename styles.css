@@ -53,18 +53,22 @@ ul#headernav li a:hover {
 
 
 
-#horr_list{	
+.slick-carousel {	
 	height:auto;
 	display:block;
     	margin:auto;
     	
+    	
 }
 
-#horr_list .car_item {
+.car {
+	padding: 20px;
+}
+.item {
 	margin: 3px;	
 }
 
-#horr_list .car_item img {
+.item img {
 	display: block;
 	  width: auto;
   	 height: 40vh;
@@ -101,6 +105,9 @@ ul#headernav li a:hover {
 	
 }
 
+.slick-prev:before, .slick-next:before {
+	color: #00adef !important;
+}
 
 
 
