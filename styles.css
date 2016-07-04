@@ -9,7 +9,12 @@ body  {
 	margin-bottom: 0;
 	
 }
-
+ul p div {
+	width: 85%;
+}
+p {
+	margin-top: 3%;
+}
 #headerimage{
 	max-width: 85%;
     	height: auto;
@@ -63,7 +68,9 @@ ul#headernav li a:hover {
 #horr_list .car_item img {
 	display: block;
 	  width: auto;
-  	 height: 30vh;
+  	 height: 40vh;
+  	 margin-left: 10px;
+  	 margin-right: 10px;
 }
 
 .list_image:hover { 
@@ -87,9 +94,9 @@ ul#headernav li a:hover {
 }
 #h2{
 	clear: both;
-	margin-top: 10%;
 }
 #h3{
+	width: 85%;
 	clear: both;
 	margin-top: 10%;
 }
