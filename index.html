@@ -7,8 +7,10 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
-<link rel="stylesheet" type="text/css" href="/slick-1.6.0/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="/slick-1.6.0/slick/slick-theme.css"/>
+
+<link rel="stylesheet" href="./owl/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" href="./owl/owl-carousel/owl.theme.css">
+
 
 
 
@@ -40,24 +42,33 @@
 
 <div id="content">
 	<div id="h1">
-		German Clock!
-		<img src="/images/germanclock/BuyOnPlay2.PNG" width="20%" height="20%" onclick="gotoStore(this);">
+		<div style="float: left; text-align:center; width:50%; height: 100%; vertical-align: middle; ">
+		German Clock
+		</div>
+		<div style="float: left; text-align:center; width:50%;">
+			<img src="/images/germanclock/BuyOnPlay2.PNG" onclick="gotoStore(this);">
+		</div>
 	</div>
+	<div style="text-align:center;margin-bottom: 2em;">
+		Includes an Android Widget and a wearable watch face
 
-
-	<div class="horr_list">
-		<img class="list_image" src="/images/germanclock/logo_moto360.png" onclick="gotoStore(this);">
-		<img class="list_image" src="/images/germanclock/logoLGG.png" onclick="gotoStore(this);">
-		<img class="list_image" src="/images/germanclock/Screenshot_2016-06-02-18-21-04.png" onclick="gotoStore(this);">
-		<img class="list_image" src="/images/germanclock/Screenshot_2016-06-02-18-17-52.png" onclick="gotoStore(this);">
-		<img class="list_image" src="/images/germanclock/Screenshot_2016-06-02-18-24-20.png" onclick="gotoStore(this);">
-		<img class="list_image" src="/images/germanclock/Screenshot_2016-06-03-10-46-55.png" onclick="gotoStore(this);">
-		<img class="list_image" src="/images/germanclock/Screenshot_2016-06-21-12-29-55.png" onclick="gotoStore(this);">
-		<img class="list_image" src="/images/germanclock/Screenshot_2016-06-21-12-35-36.png" onclick="gotoStore(this);">
+	</div>
+	<div id="car">
+		<div id="horr_list">
+			<div class="car_item"><img class="list_image" src="/images/germanclock/logo_moto360.png" onclick="gotoStore(this);"></div>
+			<div class="car_item"><img class="list_image" src="/images/germanclock/car_logo_lgg.png" onclick="gotoStore(this);"></div>
+			<div class="car_item"><img class="list_image" src="/images/germanclock/car_7.png" onclick="gotoStore(this);"></div>
+			<div class="car_item"><img class="list_image" src="/images/germanclock/car_6.png" onclick="gotoStore(this);"></div>
+			<div class="car_item"><img class="list_image" src="/images/germanclock/car_5.png" onclick="gotoStore(this);"></div>
+			<div class="car_item"><img class="list_image" src="/images/germanclock/car_4.png" onclick="gotoStore(this);"></div>
+			<div class="car_item"><img class="list_image" src="/images/germanclock/car_3.png" onclick="gotoStore(this);"></div>
+			<div class="car_item"><img class="list_image" src="/images/germanclock/car_2.png" onclick="gotoStore(this);"></div>
+			<div class="car_item"><img class="list_image" src="/images/germanclock/car_1.png" onclick="gotoStore(this);"></div>
+		</div>
 	</div>
 
 	<div id="h2">
-		Learn to tell time by reading it all day!  ))
+		Learn to tell time by reading it all day...
 	</div>
 
 	<div id="h3">
@@ -65,23 +76,22 @@
 	</div>
 </div>
 
- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="/slick-1.6.0/slick/slick.min.js"></script>
+<script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+ <script src="/owl/owl-carousel/owl.carousel.js"></script>
+
+
 
   <script type="text/javascript">
     $(document).ready(function(){
-      $('.horr_list').slick({
-			dots: true,
-			infinite: true,
-			speed: 500,
-			fade: true,
-			cssEase: 'linear',
-			arrows: true,
-			adaptiveHeight: true,
-			centerMode: true
+       $("#horr_list").owlCarousel({
+	        items : 3,
+	        itemsDesktop : [1000,5], //5 items between 1000px and 901px
+			  itemsDesktopSmall : [900,3], // betweem 900px and 601px
+			  itemsTablet: [600,2], //2 items between 600 and 0
+      		itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+	        navigation : true
 
-      });
+  });
     });
   </script>
 

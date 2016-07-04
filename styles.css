@@ -11,7 +11,7 @@ body  {
 }
 
 #headerimage{
-	max-width: 70%;
+	max-width: 85%;
     	height: auto;
 	display: block;
     	margin: 0 auto;    
@@ -19,7 +19,7 @@ body  {
 
 
 ul#headernav {	
-	width: 70%;
+	width: 85%;
 	display:table; 
 	margin:0 
 	auto;
@@ -45,23 +45,25 @@ ul#headernav li a:hover {
     	background-color: #68caef;
 }
 
-	
 
 
 
-.horr_list{
-	
-	padding: 20px;
-	border-style: solid;
-	border-color: #00adef;
+
+#horr_list{	
+	height:auto;
 	display:block;
     	margin:auto;
     	
 }
 
-.list_image {
-	width: auto;
-    	height: 10vh;
+#horr_list .car_item {
+	margin: 3px;	
+}
+
+#horr_list .car_item img {
+	display: block;
+	  width: auto;
+  	 height: 30vh;
 }
 
 .list_image:hover { 
@@ -74,13 +76,13 @@ ul#headernav li a:hover {
 
 
 #content {
-	max-width: 70%;
+	max-width: 85%;
 	display: block;
     	margin: 0 auto;    	
 }
 #h1{
 	clear: both;
-	font-size: 3em;
+	font-size: 2.7em;
 	margin-top: 3%;	
 }
 #h2{
@@ -93,7 +95,6 @@ ul#headernav li a:hover {
 }
 
 
-.slick-prev:before, .slick-next:before { 
-    color:#00adef !important;
-}
+
+
 
